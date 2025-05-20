@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class ConversorDeMoeda01 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        //Taxa de câmbio 1BRL = 0,18USD
+        double taxaDeCambio = 0.18;
+
+        System.out.println(
+                "Conversor de Moedas 0.1 - De Real para Dólar"
+        );
+        System.out.println(
+                "Insira o valor em Real Brasileiro: "
+        );
+        double valorBRL = scanner.nextDouble();
+        double valorUSD = valorBRL * taxaDeCambio;
+
+        System.out.printf(
+        "O valor em dólares é: %.2f\n", valorUSD
+        );
+    }
+}
